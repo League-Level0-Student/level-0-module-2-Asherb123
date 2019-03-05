@@ -19,7 +19,7 @@ public class SafeCracker {
 		 * combinations
 		 */
 		
-
+tryCode(100);
 	}
 
 	static void tryCode(int guess) {
@@ -44,5 +44,5 @@ public class SafeCracker {
 		}
 	}
 
-	final static int wekncrzpasfdkjhcfjse = new Random().nextInt(100);
+	final static int wekncrzpasfdkjhcfjse = new Random(123).nextInt(100);
 }

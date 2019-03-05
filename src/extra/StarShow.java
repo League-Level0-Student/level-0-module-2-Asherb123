@@ -17,34 +17,34 @@ public class StarShow {
 
 		// 5. delete this line. you will draw the star again in step 8.
 		// 13. Set the speed to 8
-		yee.setSpeed(100);
+		yee.setSpeed(1000000);
 		// 6. Make a variable to hold the X position of the Robot and set it to 10
-		int X = 10;
+		int X = 400;
 		// 7. Make a variable to hold the Y position of the Robot and set it to 600
-		int Y = 600;
+		int Y = 300;
 		// 8. Make a variable to hold the star size and set it to 25
 		int Size = 25;
 		// 12. Repeat the steps #19 to #18, 30 times
 		for (int i = 0; i < 30; i++) {
 
 			// 19. Set the pen width to i
-
+			yee.setPenWidth(i);
 			// 10. Set the X position of the robot to your X variable
 			yee.moveTo(X, Y);
 			// 11. Set the Y position of the robot to your Y variable
 
 			// 9. Call the drawStar() method with your star size variable
-			drawStar(150);
+			drawStar(Size);
 			// 14. Increase the X position by star size. See Figure 2.
-			yee.setX(150);
+			yee.setX(Size);
 			// 15. decrease the Y position by star size. See Figure 3.
-			yee.setY(150);
+			yee.setY(Size);
 			// 16. Increase the star size by 20
-			starSize+=20;
+			Size+=20;
 			// 17. Turn the robot 12 degrees
-
+			yee.turn(12);
 			// 18. Make each star a different random color like in Figure 4.
-
+			yee.setRandomPenColor();
 		}
 	}
 
